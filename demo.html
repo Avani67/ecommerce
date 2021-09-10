@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+</head>
+<body>
+
+    <h1>Hello Guest!</h1>
+    <h1>Arithmatic Operator</h1>
+    <p id="result">result</p>
+    <h1>Assignment Operator</h1>
+    <p id="result1">result</p>
+    <h1>Comparison Operator</h1>
+    <p id="result2">Comparison Result</p>
+    <h1>Logical Operator</h1>
+    <p id="result3">Logical Result</p>
+<script>
+//to write browser console
+console.log('hello');
+
+//to write into alert box
+alert('welcome');
+
+//to write on browser
+document.write('Hello World');
+
+//document.getElementById and innerHTML to write content in HTML element
+//document.getElementById("h1").innerHTML ='Hello World';
+
+//Arithmatic Equation
+var a=20;
+var b=20;
+var sum = a + b;
+var sub = a-b;
+var mul = a*b;
+var div = a/b;
+var mode = a%b;
+document.getElementById("result").innerHTML="Add =" + sum + "<br>" + "Subtract = " + sub +"<br>" + "Multiply =" + mul + "<br>" + "Divide=" + div + "<br>" + "Reminder for 20/10 =" + mode;
+
+// Assignment Operator
+var a=10; a+=5; var b=a;
+var c= 7; c*=8; var d=c;
+
+document.getElementById("result1").innerHTML = "New value of a:" + b + "<br>" + "New value of c is:" +d;
+
+//Comparison Operator
+var x=5;
+document.getElementById("result2").innerHTML = "X == x is :" + (x=x) + "<br>" + "x == 5 is :" + (x == "5");
+
+// Logical Operator
+var x=5 ; y=9;
+document.getElementById("result3").innerHTML = (x>3&&y<7) + "<br>" + (x>3||y<7) + "<br>" + !(x===y) + "<br>" + !(x<y);
+
+</script>
+
+
+
+
+</body>
+</html>
